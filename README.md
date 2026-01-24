@@ -9,7 +9,7 @@ You will get to learn all the main basics of HTML and write a story that involve
 - Clickable choices using links
 - A webpage that readers can explore in different ways
 
-## What Can you Change?
+## What Can You Change?
 - Rewrite the story
 - Add more choices/endings
 - Add images
