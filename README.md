@@ -25,6 +25,3 @@ Most of all I encourage you to make it your own!
 
 ## License
 This project uses MIT license. You are free to copy, modify and use it however you like. 
-
----
-📄 Currently being updated and improved!
