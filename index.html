@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Change this to your story title! -->
+        <title>"[Your Name]'s Adventure Story"</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!-- This will be PAGE 1: the beginning of your story -->
+        <div class="active page" id="page1">
+            <!-- Change this to your story title! (this will show up on the page)-->
+            <h1>The Lost Backpack</h1> 
+
+            <img src="images/backpack.png" alt="backpack" width="200" height="200">
+
+            <!-- Write your first opening here!-->
+            <p>You find yourself going back to your study spot and your backpack is missing!
+                You wonder where it has gone and decide on two options.
+            </p>
+
+            <!-- Change the button text to your choices! -->
+            <button onclick="goTo('page2')">Go to the Front Desk</button>
+            <button onclick="goTo('page3')">Ask your friend</button>
+        </div>
+
+        <!-- PAGE 2: Choice 1 outcome -->
+        <div class="page" id="page2">
+            
+            <!-- Write what happens for your first option -->
+            <h1>At the Front Desk</h1>
+
+            <!-- Write your second opening here!-->
+            <p>You tell the librarian that your backpack is missing and she says she
+                can check the cameras for you. You decide:
+            </p>
+        
+            <!-- Change the button text to your choices! -->
+            <button onclick="goTo('page4')">Please check the cameras!</button>
+            <button onclick="goTo('page5')">I will just find it on my own</button>
+        </div>
+
+        <!-- PAGE 3: Choice 2 outcome -->
+        <div class="page" id="page3">
+
+            <!-- Write what happens for your second option -->
+            <h1>You ask your friend</h1>
+            <p>They tell you they saw a glimpse of a figure take your backpack and ran off.
+                What do you do?
+            </p>
+
+            <!-- Change the button text to your choices! -->
+            <button onclick="goTo('page4')">Go towards the direction</button>
+            <button onclick="goTo('page5')">Go home</button>
+        </div>
+        
+        <!-- PAGE 4: Good Ending -->
+        <div class="page" id="page4">
+            
+            <!-- Write what happens for your first ending -->
+            <h1>You find the culprit!</h1>
+            <p>
+                You find out that it was a racoon! It scavanged through your backpack
+                and found all your snacks. RIP
+            </p>
+
+            <!-- Change the button text to your choices! -->
+            <button onclick="goTo('page1')">Play Again!</button>
+        </div>
+
+        <!-- PAGE 5: Bad Ending -->
+        <div class="page" id="page5">
+
+            <!-- Write what happens for your second ending -->
+            <h1>You don't try</h1>
+            <p>
+                Unfortunately, you never get your backpack and so you're just
+                sad all day.
+            </p>
+            
+            <!-- You can have them retry! as long as you route it back to page 1 -->
+            <button onclick="goTo('page1')">Play Again!</button>
+        </div>
+
+        <!-- No need to change anything here, it is just to link the pages togethe -->
+        <script>
+            function goTo(pageId) {
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                document.getElementById(pageId).classList.add('active');
+            }
+        </script>
+    </body>
+
+
+</html>

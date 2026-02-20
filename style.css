@@ -1,0 +1,38 @@
+/* {Page Layout} */
+
+body {
+            background-color: #ffffff; /* Change the background color! */
+            display: flex;
+            justify-content: center; /* if you choose to you can play around with positioning, options are: left, right, center*/
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+.page {
+    display: none;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* {Button Design} */
+
+button {
+    background-color: rgb(227, 157, 161); /* Change the button color! */
+    border: none;
+    padding: 10px 20px; /* You can change how it looks */
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer; /* this just changes your cursor so that it knows its about to click the button */
+}
+
+button:hover {
+            background-color: #8a3d3d; /* Change the hover color! */
+        }
