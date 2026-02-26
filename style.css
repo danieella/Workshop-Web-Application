@@ -3,7 +3,7 @@
 body {
             background-color: #ffffff; /* Change the background color! */
             display: flex;
-            justify-content: center; /* if you choose to you can play around with positioning, options are: left, right, center*/
+            justify-content: center; /* if you choose to you can play around with positioning, options are: left, right, center */
             align-items: center;
             min-height: 100vh;
             margin: 0;
@@ -30,7 +30,7 @@ button {
     margin: 10px;
     border-radius: 10px;
     font-size: 15px;
-    cursor: pointer; /* this just changes your cursor so that it knows its about to click the button */
+    cursor: pointer; /* this just changes your cursor so that it knows it's about to click the button */
 }
 
 button:hover {
