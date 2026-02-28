@@ -15,6 +15,9 @@ body {
     text-align: center;
     padding: 40px;
     border-radius: 20px;
+    border: 1.5px solid rgb(220, 150, 158); /* You can change the border/box around the story here */
+    box-shadow: 0 4px 16px rgba(142, 64, 72, 0.15); /* You can change the hover color! */
+    background-color:rgb(255, 237, 238) /* You can change the background color of the box */
 }
 
 .page.active {
@@ -26,13 +29,22 @@ body {
 button {
     background-color: rgb(227, 157, 161); /* Change the button color! */
     border: none;
-    padding: 10px 20px; /* You can change how it looks */
+    padding: 10px 20px; /* You can change how the text looks around the box */
     margin: 10px;
     border-radius: 10px;
     font-size: 15px;
-    cursor: pointer; /* this just changes your cursor so that it knows it's about to click the button */
+    cursor: pointer; /* This just changes your cursor so that it knows it's about to click the button */
 }
 
 button:hover {
             background-color: #8a3d3d; /* Change the hover color! */
         }
+
+h1 {
+    font-family: "Courgette", cursive; /* You can try changing the font, but you have to edit the HTML file first using the code given from fonts.google.com */
+}
+
+img {
+    border: 2px solid rgb(238, 179, 189); /* You can change how the border around the image looks like */
+    border-radius: 12px; /* You can change how much of a curve it makes on your image */
+}
